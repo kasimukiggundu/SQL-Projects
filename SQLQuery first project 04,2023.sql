@@ -1,3 +1,6 @@
+--USING THE WHO COVID DATA  i managed to run some querys using select, from, where, group by, order by, like functions. as well used the CTE and TEMP table to perform different arithemetic calculations
+--was able to use help f the cast function to convert different columns data mode 
+
 select *
 from Portifolio_project..coviddeaths
 where continent is not null
@@ -126,8 +129,3 @@ JOIN portifolio_project..covidvaccinations vac
 SELECT *, ((cast(Rollingpeoplevaccinated as float))/(NULLIF (population, 0)))*100 AS percentvaacperpopulation
 FROM #PercentPopulationVaccinated
 
-
---creating a view to store data for later visualiation
-
-
-CREATE VIEW 
